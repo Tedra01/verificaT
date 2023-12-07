@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/iniciar_sesion">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/configurar_datos"
+        android:textColor="@color/fond_claro"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/color_letra_opaco"
+        app:startIconDrawable="@drawable/icon_persona"
+        app:startIconTint="@color/color_letra_opaco"
+        app:endIconTint="@color/color_letra_opaco"
+        android:hint="@string/nombre_del_usuario"
+        app:hintTextColor="@color/color_letra_opaco"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/color_letra_opaco"
+            android:textColor="@color/fond_claro"
+            android:textSize="18sp"
+            tools:text="Carla Cubela Acosta"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:background="@color/iniciar_sesion"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/color_letra_opaco"
+        app:startIconDrawable="@drawable/icon_date"
+        app:startIconTint="@color/color_letra_opaco"
+        app:endIconTint="@color/color_letra_opaco"
+        app:hintTextColor="@color/color_letra_opaco"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <AutoCompleteTextView
+            android:id="@+id/etFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="14dp"
+            android:textColorHint="@color/color_letra_opaco"
+            android:textColor="@color/fond_claro"
+            android:hint="@string/fecha_pequena"
+            tools:text="24/5/23"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:background="@color/iniciar_sesion"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/color_letra_opaco"
+        app:startIconDrawable="@drawable/area_comedor_icon"
+        app:startIconTint="@color/color_letra_opaco"
+        app:endIconTint="@color/color_letra_opaco"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/etNombreArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dropDownWidth="wrap_content"
+            android:dropDownHeight="100dp"
+            android:hint="@string/area"
+            android:textColorHint="@color/color_letra_opaco"
+            android:textColor="@color/fond_claro"
+            android:textSize="18sp"
+            android:text="@string/ignacio_agramonte"
+            android:layout_weight="1"
+            android:maxEms="5"
+            android:inputType="none"
+            android:focusable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:text="@string/confirmar"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/item_barra_azul_claro"
+        android:layout_marginHorizontal="85dp"
+        android:paddingHorizontal="5dp"
+        android:backgroundTint="@color/fond_claro"
+        />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

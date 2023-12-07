@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="30dp"
+    android:background="@color/white"
+    tools:context="com.carlasarai.TicketsKotlin.ui.menuPlatos.MenuPlatosFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/primer_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:textSize="20sp"
+            android:textColor="@color/bienvenido_color"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/et_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            tools:text="3/2/2023"
+            android:textColor="@color/reservados"
+            android:textSize="20sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/productos_reservados"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/productos"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primer_linear"
+        app:layout_constraintEnd_toStartOf="@id/etTotalProductos"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etTotalProductos"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:text="112"
+        android:textColor="@color/reservados"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/productos_reservados"
+        app:layout_constraintTop_toBottomOf="@+id/primer_linear"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/productos_consumidos"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/consumidos"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/productos_reservados"
+        app:layout_constraintTop_toBottomOf="@+id/productos_reservados"
+        app:layout_constraintEnd_toEndOf="@+id/productos_reservados"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etConsumidos"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/canjeados"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etTotalProductos"
+        app:layout_constraintTop_toBottomOf="@+id/etTotalProductos"
+        app:layout_constraintEnd_toEndOf="@+id/etTotalProductos"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/productos_sin_consumir"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/sin_consumir"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/productos_consumidos"
+        app:layout_constraintTop_toBottomOf="@+id/productos_consumidos"
+        app:layout_constraintEnd_toEndOf="@+id/productos_consumidos"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/etSinConsumir"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/disponibles"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/etConsumidos"
+        app:layout_constraintTop_toBottomOf="@+id/etConsumidos"
+        app:layout_constraintEnd_toEndOf="@+id/etConsumidos"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/segundo_linear"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSinConsumir"
+        app:layout_constraintBottom_toTopOf="@id/tercer_linear">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consumidos"
+            android:textSize="16sp"
+            android:textColor="@color/bienvenido_color" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvConsumidos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_barra_blanca"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/tercer_linear"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/segundo_linear"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sin_consumir"
+            android:textSize="16sp"
+            android:textColor="@color/bienvenido_color" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSinConsumir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_barra_blanca"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_canjear_comensal"
+            android:title="@string/canjear_comensal" />
+        <item
+            android:id="@+id/nav_canjear_comensal_por_nombre_area"
+            android:title="@string/canjear_comensal_por_nombre_area" />
+
+        <item
+            android:id="@+id/nav_comensales_disponibles"
+            android:title="@string/comensales_disponibles" />
+        <item
+            android:id="@+id/nav_comensales_canjeados"
+            android:title="@string/comensales_canjeados" />
+        <item
+            android:id="@+id/nav_menu_consumido"
+            android:title="@string/menu" />
+
+    </group>
+
+</menu>

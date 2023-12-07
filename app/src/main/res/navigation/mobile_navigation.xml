@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_canjear_comensal">
+
+    <fragment
+        android:id="@+id/nav_canjear_comensal"
+        android:name="com.carlasarai.TicketsKotlin.ui.canjearComensal.CanjearComensalFragment"
+        android:label="@string/canjear_comensal"
+        tools:layout="@layout/fragment_canjear_comensal" />
+    <fragment
+        android:id="@+id/nav_canjear_comensal_por_nombre_area"
+        android:name="com.carlasarai.TicketsKotlin.ui.canjearComensalPorNombreArea.CanjearComensalPorNombreArea"
+        android:label="@string/canjear_comensal"
+        tools:layout="@layout/fragment_canjear_nombre_area" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_comensales_disponibles"
+        android:name="com.carlasarai.TicketsKotlin.ui.comensalesDisponibles.ComensalesDisponiblesFragment"
+        android:label="@string/comensales_disponibles"
+        tools:layout="@layout/fragment_comensales_disponibles" />
+
+    <fragment
+        android:id="@+id/nav_comensales_canjeados"
+        android:name="com.carlasarai.TicketsKotlin.ui.comensalesCanjeados.ComensalesCanjeadosFragment"
+        android:label="@string/comensales_canjeados"
+        tools:layout="@layout/fragment_comensales_canjeados" />
+
+    <fragment
+        android:id="@+id/nav_menu_consumido"
+        android:name="com.carlasarai.TicketsKotlin.ui.menuPlatos.MenuPlatosFragment"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu_platos" />
+
+</navigation>

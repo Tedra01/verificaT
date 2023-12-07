@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="30dp"
+    android:focusable="true"
+    android:background="@color/white"
+    tools:context="com.carlasarai.TicketsKotlin.ui.comensalesDisponibles.ComensalesDisponiblesFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/primer_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha"
+            android:textSize="20sp"
+            android:textColor="@color/bienvenido_color"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/et_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            tools:text="3/2/2023"
+            android:textColor="@color/reservados"
+            android:textSize="20sp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reservados_texto"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="@string/reservados_hoy"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primer_linear"
+        app:layout_constraintEnd_toStartOf="@id/et_reservados"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/et_reservados"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        tools:text="112"
+        android:textColor="@color/reservados"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/reservados_texto"
+        app:layout_constraintTop_toBottomOf="@+id/primer_linear"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/disponibles"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/reservados_texto"
+        app:layout_constraintTop_toBottomOf="@+id/reservados_texto"
+        app:layout_constraintEnd_toEndOf="@+id/reservados_texto"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/et_disponibles"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        tools:text="93"
+        android:textColor="@color/disponibles"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/et_reservados"
+        app:layout_constraintTop_toBottomOf="@+id/et_reservados"
+        app:layout_constraintEnd_toEndOf="@+id/et_reservados"/>
+
+    <EditText
+        android:id="@+id/et_filter"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="40dp"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="text"
+        android:autofillHints=""
+        android:hint="@string/filtrar_comensal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_disponibles"
+        app:layout_constraintBottom_toTopOf="@id/segundo_linear" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/segundo_linear"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_filter"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disponibles"
+            android:textSize="16sp"
+            android:textColor="@color/bienvenido_color" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvComensales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/item_barra_blanca"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

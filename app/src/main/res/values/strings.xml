@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">VerificaTicket</string>
+    <string name="como_obtendra_los_tickets">¿Cómo obtendrá el archivo con el listado de Tickets?</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="descargar_archivo">Descargar Archivo</string>
+    <string name="importar_archivo">Importar Archivo</string>
+
+    <string name="usuario">Usuario</string>
+    <string name="nombre_del_usuario">Nombre y Apellidos</string>
+    <string name="area">Área del Comedor</string>
+    <string name="configurar_datos">Configurar Datos</string>
+    <string name="ignacio_agramonte">Ignacio Agramonte</string>
+    <string name="fecha_pequena">Fecha</string>
+
+    <string name="confirmar">Confirmar</string>
+    <string name="borrar_contenido">Limpiar Pantalla</string>
+    <string name="buscar_ticket">Buscar Ticket</string>
+
+    <string name="nombre_del_comensal">Nombre del Comensal</string>
+    <string name="area_del_comensal">Area del Comensal</string>
+    <string name="buscar_comensal">Buscar Comensal</string>
+    <string name="ir_al_ticket">Ir al Ticket</string>
+
+    <string name="fecha">FECHA:</string>
+    <string name="reservados_hoy">RESERVADOS:</string>
+    <string name="canjeados">CANJEADOS:</string>
+    <string name="disponibles">DISPONIBLES</string>
+    <string name="filtrar_comensal">Buscar Comensal</string>
+    <string name="productos">PRODUCTOS</string>
+    <string name="consumidos">CONSUMIDOS:</string>
+    <string name="sin_consumir">SIN CONSUMIR:</string>
+
+    <string name="nav_ctrl_ticket">Verifica Ticket</string>
+
+    <string name="canjear_comensal">Buscar Ticket</string>
+    <string name="canjear_comensal_por_nombre_area">Buscar Comensal</string>
+    <string name="comensales_disponibles">Comensales Disponibles</string>
+    <string name="comensales_canjeados">Comensales Canjeados</string>
+    <string name="menu">Productos</string>
+
+    <string name="escaner_qr">Escanear Qr</string>
+    <string name="exportar_base_datos">Guardar listado de tickets</string>
+    <string name="crear_informe">Crear informe diario</string>
+    <string name="terminar">Terminar confirmación</string>
+
+
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Opciones</string>
+    <string name="hello">Hello</string>
+    <string name="todo">TODO</string>
+    <string name="area_comensal">Area del Comensal</string>
+    <string name="secretaria">Secretaria</string>
+
+    <string-array name="nombre_area_comedor">
+        <item>Ignacio Agramonte</item>
+        <item>Jose Marti</item>
+        <item>Manuel Fajardo</item>
+
+    </string-array>
+
+
+</resources>

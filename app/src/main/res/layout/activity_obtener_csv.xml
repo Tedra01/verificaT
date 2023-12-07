@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.carlasarai.TicketsKotlin.ui.obtenerCsv.ObtenerCsvActivity"
+    android:background="@color/fond_claro">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imagenTicket"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textoBienvenido"
+        android:background="@drawable/ctrlticket" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textoBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="@string/bienvenido"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenTicket"
+        app:layout_constraintBottom_toTopOf="@+id/textoComoObtener"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textoComoObtener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:paddingHorizontal="15dp"
+        android:text="@string/como_obtendra_los_tickets"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/textoBienvenido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonDescargarDocumento"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDescargarDocumento"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
+        android:text="@string/descargar_archivo"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="20sp"
+        android:backgroundTint="@color/fondo_claro_oscuro"
+        android:background="@drawable/item_barra_azul_claro"
+        app:layout_constraintTop_toBottomOf="@+id/textoComoObtener"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonImportarDocumento"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonImportarDocumento"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="70dp"
+        android:paddingHorizontal="10dp"
+        android:text="@string/importar_archivo"
+        android:textColor="@color/bienvenido_color"
+        android:textSize="20sp"
+        android:backgroundTint="@color/fondo_claro_oscuro"
+        android:background="@drawable/item_barra_azul_claro"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDescargarDocumento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8B000000"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

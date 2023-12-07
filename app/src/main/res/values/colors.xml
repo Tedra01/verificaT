@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu">#062259</color>
+    <color name="barra_tarea">#B5D7FF</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="fond_claro">#E8F1FF</color>
+    <color name="color_letra_opaco">#98A8C2</color>
+    <color name="fondo_claro_oscuro">#B5D7FF</color>
+    <color name="bienvenido_color">#062259</color>
+    <color name="iniciar_sesion">#091630</color>
+    <color name="canjeados">#A61010</color>
+    <color name="disponibles">#32940F</color>
+    <color name="reservados">#2092EA</color>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/scanerQr"
+        android:icon="@drawable/scaner_qr"
+        android:orderInCategory="100"
+        android:title="@string/escaner_qr"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/exportarArchivo"
+        android:icon="@drawable/export_data_base"
+        android:orderInCategory="100"
+        android:title="@string/exportar_base_datos"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/exportarInforme"
+        android:icon="@drawable/export_informe"
+        android:orderInCategory="100"
+        android:title="@string/crear_informe"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/terminar"
+        android:icon="@drawable/img"
+        android:orderInCategory="100"
+        android:title="@string/terminar"
+        app:showAsAction="ifRoom" />
+
+</menu>
