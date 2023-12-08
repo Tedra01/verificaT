@@ -5,7 +5,6 @@ import android.app.Dialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.text.Editable
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Toast
@@ -14,7 +13,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.carlasarai.TicketsKotlin.ui.menuLateral.MenuActivity
@@ -116,12 +114,12 @@ class ObtenerCsvActivity : AppCompatActivity() {
         val buttonConfirmar = dialogo.findViewById<AppCompatButton>(R.id.buttonConfirmar)
         val areasss = resources.getStringArray(R.array.nombre_area_comedor)
         val arrayAdapter = ArrayAdapter(this,R.layout.dropdown_item, areasss)
-        val formato = SimpleDateFormat("dd/MM/yy", Locale.getDefault())
+        //val formato = SimpleDateFormat("dd/MM/yy", Locale.getDefault())
         val formatoHora = SimpleDateFormat("dd/MM/yy HH:mm:ss", Locale.getDefault())
         val fechaActual = Calendar.getInstance().time
-        val fechaFormateada = formato.format(fechaActual)
-        val editableFecha = Editable.Factory.getInstance().newEditable(fechaFormateada)
-        dialogo.findViewById<AutoCompleteTextView>(R.id.etFecha).text = editableFecha
+        //val fechaFormateada = formato.format(fechaActual)
+        //val editableFecha = Editable.Factory.getInstance().newEditable(fechaFormateada)
+        //dialogo.findViewById<AutoCompleteTextView>(R.id.etFecha).text = editableFecha
         etArea.setAdapter(arrayAdapter)
         buttonConfirmar.setOnClickListener {
             when{
